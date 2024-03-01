@@ -11,7 +11,7 @@
 //SP 2023.12.13 - updated annotations for clarity
 
 //directory of condition folders
-ex_dir = "Z:/Lab Members/Sarah Perritt/Data/SPp34 Transient cold shock in BKPyV/replicates/MicroCyte/files"
+ex_dir = "Z:/Lab Members/Sarah Perritt/Data/SPp35 MAPKi PIT assay/replicates/MicroCyte/files"
 //checking that a directory was provided
 if( getArgument() != "") {
 	ex_dir = getArgument();
@@ -22,7 +22,7 @@ close("*");
 //generates a list of the condition files
 condition_dirs = getFileList(ex_dir);
 for(i = 0; i < condition_dirs.length; i++) { 
-		for(j = 1;j<=8;j++) {
+		for(j = 1;j<=5;j++) {
 			//generates a list of the image files within the 'condition' directory
 			image_dir = ex_dir+"/"+condition_dirs[i]+"image_"+j;
 			print("processing "+image_dir);
